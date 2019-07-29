@@ -2,49 +2,47 @@
 #include <fstream>;
 #include <string>;
 using namespace std;
-void main()
-{
-	string fi1("input.txt");
-	string fi2("err.msg");
-	string fi3("errtbl");
-	string fo("output.txt");
-	textposition positionnow;
-	positionnow.x = 0;
-	positionnow.y = 0;
-}
+//textposition 
+short lastinline; //номер последнего символа в текущей строке
+const short MAXLINE = 255; //максимальная длинна считываемой строки
+char line[MAXLINE];
+char ch;
 struct textposition
 {
 	unsigned y; /*номер строки */
 	unsigned x; /*номер позиции	в строке */
-} ;
-void nextch(ifstream fi1)
+} pos; //текущая позиция символа
+void main()
 {
-	//short lastinline;
-	//const short MAXLINE = 255;
-	//char line[MAXLINE];
-	if (0)//последняя литера строки
+	ifstream fi1("input.txt");
+	ifstream fi2("err.msg");
+	ifstream fi3("errtbl");
+	ofstream fo("output.txt");
+	pos.x = 0;
+	pos.y = 0;
+	fi1 >> line;
+	//cout << line << endl;
+	do ()
 	{
-		//печать строки
+
+	}
+	getchar();
+}
+void nextch(ifstream fi1, ofstream fo)
+{
+	if (pos.x==lastinline)//последняя литера строки
+	{
+		fo << line;
 		if (0) //в текущей строке найдены ошибки
 		{
 			//напечатать сообщения об ошибках
 		}
-		//прочитать следующую строку
+		fi1 >> line;
 	}
-	//установить в качестве текущей следующую литеру и записать ее координаты
-}
-void readwrite(string outputname, string inputname, string errtable, string errnames)
-{
-	while (!fi1.eof)
-	{
-		pos.y++;
-		pos.x = 0;
-		char c;
-		do
-		{
-			fi1 >> c;
-			pos.x++;
-		} while (fi1.end)
-	};
+	else {
+		pos.x++;
+		ch = line[pos.x];
+	}
 
+	//установить в качестве текущей следующую литеру и записать ее координаты
 }
