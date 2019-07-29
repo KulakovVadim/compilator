@@ -1,0 +1,7 @@
+﻿  Source.cpp
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(1): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(3): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(33): error C2276: !: недопустимая операция с выражением привязанной функции-члена
+d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(42): error C2059: синтаксическая ошибка: )
