@@ -1,7 +1,8 @@
 ﻿  Source.cpp
-d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(1): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(3): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(4): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-d:\git\compilator\compilatorproj\compproj\compproj\source.cpp(37): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(1,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(2,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(3,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(4,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(39,1): warning C4326:  возвращаемый тип "main" должен быть "int", а не "void"
+D:\git\compilator\CompilatorProj\CompProj\CompProj\Source.cpp(61,22): warning C4018:  <: несоответствие типов со знаком и без знака
   CompProj.vcxproj -> D:\git\compilator\CompilatorProj\CompProj\Debug\CompProj.exe

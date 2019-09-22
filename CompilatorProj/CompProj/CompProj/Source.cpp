@@ -6,11 +6,11 @@ using namespace std;
 //textposition 
 short lastinline; //номер последнего символа в текущей строке
 const short MAXLINE = 255; //максимальная длинна считываемой строки
-const short ERRMAX = 10;
+const short ERRMAX = 10; //наибольшее количество ошибок в строке, о которых будет получать информацию пользователь
 char line[MAXLINE];
 char ch;
-short ErrInx=0;
-bool ErrorOverFlow = false;
+short ErrInx=0;//кол-во обнаруженных ошибок в текущей строке
+bool ErrorOverFlow = false; //количество ошибок, обнаруженных в текущей строке, превышает ERRMAX
 struct textposition
 {
 	unsigned y; /*номер строки */
@@ -25,13 +25,15 @@ void initerrors()
 {
 	ErrList[0].errorcode = 3;
 	ErrList[0].errorposition.y = 2;
-	ErrList[0].errorposition.x = 4;
+	ErrList[0].errorposition.x = 0;
+
 	ErrList[1].errorcode = 4;
 	ErrList[1].errorposition.y = 2;
 	ErrList[1].errorposition.x = 7;
-	ErrList[4].errorcode = 31;
-	ErrList[4].errorposition.y = 5;
-	ErrList[4].errorposition.x = 0;
+
+	ErrList[2].errorcode = 31;
+	ErrList[2].errorposition.y = 5;
+	ErrList[2].errorposition.x = 1;
 }
 void main()
 {
@@ -46,7 +48,7 @@ void main()
 	int i = 0;
 	int CurErr = 0;
 	initerrors();
-	cout << d << endl;
+	//cout << d << endl;
 	while (!fi1.eof())
 	{
 		i++;
@@ -57,15 +59,15 @@ void main()
 			cout << setfill('*') << setw(4) << CurErr << "**  ";
 			string s = "";
 			for (int k = 0; k < ErrList[CurErr].errorposition.x; k++)
-				s += " ";
-			s += "^ " + ErrList[CurErr].errorcode;
-			cout << s << endl;
+				s += "_";
+			s += "^ "; 
+			cout << s << ErrList[CurErr].errorcode<< endl;
 			CurErr++;
 		}
 	}
 	getchar();
 }
-void ListErrors()
+void ListErrors()//печать сообщений об ошибках
 {
 
 }
